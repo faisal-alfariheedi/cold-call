@@ -32,18 +32,27 @@
                                     <action selector="callonclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwG-xI-OWz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2e-Vp-ooN">
+                                <rect key="frame" x="130" y="124" width="155" height="245"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vNI-tq-CV2" firstAttribute="top" secondItem="T2e-Vp-ooN" secondAttribute="bottom" constant="36" id="1hr-wM-eJv"/>
                             <constraint firstItem="vNI-tq-CV2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HiX-FH-phZ"/>
                             <constraint firstItem="Hvi-Ei-dg8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NuF-Fa-DxO"/>
+                            <constraint firstItem="T2e-Vp-ooN" firstAttribute="top" secondItem="Hvi-Ei-dg8" secondAttribute="bottom" constant="28" id="Wy4-YY-6Ng"/>
                             <constraint firstItem="Hvi-Ei-dg8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="axJ-MM-sg1"/>
-                            <constraint firstItem="vNI-tq-CV2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pcF-py-dHR"/>
+                            <constraint firstItem="T2e-Vp-ooN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bjf-jE-Bhh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="names" destination="Hvi-Ei-dg8" id="2hJ-yL-baC"/>
+                        <outlet property="num" destination="T2e-Vp-ooN" id="v4h-fV-9WK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
